@@ -7,6 +7,7 @@ server.use(globalMiddleware, api)
 
 const port = process.env.PORT || 5000
 
+require('dotenv').config()
 server.listen(port, () => {
 	console.log(`//============== Server is active on port ${port} =======================//`)
 })
